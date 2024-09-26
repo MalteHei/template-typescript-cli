@@ -1,0 +1,90 @@
+{
+	"root": true,
+	"parser": "@typescript-eslint/parser",
+	"plugins": [
+		"@typescript-eslint",
+		"import-quotes"
+	],
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/eslint-recommended",
+		"plugin:@typescript-eslint/recommended"
+	],
+	"rules": {
+		"quotes": ["error", "single"],
+		"import-quotes/import-quotes": ["error", "single"],
+		"@typescript-eslint/no-non-null-assertion": "off",
+		"@typescript-eslint/no-namespace": "off",
+		"@typescript-eslint/no-var-requires": "off",
+		"array-callback-return": "off",
+		"curly": "off",
+		"eol-last": "error",
+		"no-restricted-imports": [
+			"error",
+			"rxjs/Rx"
+		],
+		"keyword-spacing": "error",
+		"max-len": [
+			"error",
+			140
+		],
+		"no-empty": "off",
+		"no-fallthrough": "error",
+		"no-var": "error",
+		"@typescript-eslint/semi": [
+			"error"
+		],
+		"space-before-function-paren": ["error", {
+			"anonymous": "always",
+			"named": "never",
+			"asyncArrow": "always"
+		}],
+		"@typescript-eslint/explicit-function-return-type": [
+			"error",
+			{
+				"allowExpressions": true
+			}
+		],
+		"@typescript-eslint/type-annotation-spacing": "error",
+		"camelcase": "off",
+		"no-irregular-whitespace": "error",
+		"no-whitespace-before-property": "error",
+		"@typescript-eslint/prefer-function-type": "error",
+		"@typescript-eslint/naming-convention": "off",
+		"@typescript-eslint/unified-signatures": "error",
+		"no-eval": "error",
+		"no-caller": "error",
+		"no-new": "error",
+		"no-bitwise": "error",
+		"no-new-wrappers": "error",
+		"no-debugger": "error",
+		"no-duplicate-imports": "error",
+		"constructor-super": "error",
+		"@typescript-eslint/no-empty-interface": "error",
+		"@typescript-eslint/no-shadow": "error",
+		"no-throw-literal": "error",
+		"dot-notation": "error",
+		"no-trailing-spaces": "error",
+		"no-undef-init": "error",
+		"no-unused-expressions": "error",
+		"no-unused-vars": [ "warn", { "argsIgnorePattern": "^_" } ],
+		"prefer-const": "error",
+		"radix": "error",
+		"no-lonely-if": "error",
+		"no-unreachable": "error",
+		"default-case": "error",
+		"comma-spacing": ["error", { "before": false, "after": true }],
+		"no-multi-spaces": "error",
+		"eqeqeq": [
+			"error",
+			"smart"
+		],
+		"no-multiple-empty-lines": [
+			"error",
+			{
+				"max": 1,
+				"maxEOF": 1
+			}
+		]
+	}
+}
